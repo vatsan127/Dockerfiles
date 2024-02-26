@@ -1,42 +1,26 @@
-Dockerfiles
-
+Dockerfile
 Specify a base image:
-
-    Usage: FROM <base image>
-
-    Example: FROM node:latest
+•	Usage: FROM <base image>
+•	Example: FROM node:latest
 
 Set a working directory for the container:
-
-    Usage: WORKDIR <dir>
-
-    Example: WORKDIR /usr/src/app
+•	Usage: WORKDIR <dir>
+•	Example: WORKDIR /usr/src/app
 
 Run a command for the container image:
-
-    Usage: RUN command
-
-    Command: RUN npm install -g serve
+•	Usage: RUN command
+•	Command: RUN npm install -g serve
 
 Copy files into the container:
-
-    Usage: COPY <local files/directories> <container files/directories>
-
-    Example: COPY ./display ./display
+•	Usage: COPY <local files/directories> <container files/directories>
+•	Example: COPY ./display ./display
 
 Inform that a port should be exposed
-
-    Usage: EXPOSE <port>
-
-    Example: EXPOSE 80
+•	Usage: EXPOSE <port>
+•	Example: EXPOSE 80
 
 Specify a default command for the container:
-
-    Usage (shell format): CMD <default command>
-
-    Example: CMD serve ./display
-
-    Usage (exec format, recommended): CMD [“default command”, “arguments”]
-
-    Example: CMD [“node”, “server.js”]
-
+•	Usage (shell format): CMD <default command>
+•	Example: CMD serve ./display
+•	Usage (exec format, recommended): CMD [“default command”, “arguments”]
+•	Example: CMD [“node”, “server.js”]
